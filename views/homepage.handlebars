@@ -1,2 +1,6 @@
-<h2>Write about tech</h2>
-<textarea></textarea>
+<h2>Recent Posts:</h2>
+{{#each loadPosts}}
+    <h3>{{this.title}}</h3>
+    <h4>Written by {{this.user}}</h4>
+    <p>{{this.text}}</p>
+    {{/each}}
