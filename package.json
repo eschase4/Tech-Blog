@@ -1,0 +1,34 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eschase4/Tech-Blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eschase4/Tech-Blog/issues"
+  },
+  "homepage": "https://github.com/eschase4/Tech-Blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "eslint-config-wesbos": "^3.2.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^5.3.5",
+    "express-session": "^1.17.3",
+    "handlebars": "^4.7.6",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.21",
+    "sequelize": "^6.29.2"
+  }
+}
