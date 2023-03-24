@@ -10,8 +10,7 @@ router.post('/newpost', async (req, res) => {
     const newPostData = await Post.create({
       title: req.body.title,
       text: req.body.text,
-      user: req.session.username,
-      //   include: User,
+      user_id: req.session.user_id,
       //   attributes: ['username'],
     });
     // const newPostObj = {

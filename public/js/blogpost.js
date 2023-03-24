@@ -4,7 +4,7 @@ const handleSubmit = (e) => {
   e.preventDefault();
   const postObj = {
     text: document.querySelector('#textArea').value.trim(),
-    title: document.querySelector('#textArea').value.trim(),
+    title: document.querySelector('#title').value.trim(),
   };
   fetch('/api/newpost', {
     method: 'POST',

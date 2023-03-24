@@ -20,7 +20,9 @@ router.get('/home', async (req, res) => {
 // username: loadPosts.user,
 
 router.get('/newpost', (req, res) => {
-  res.render('newpost');
+  res.render('newpost', {
+    loggedIn: req.session.loggedIn,
+  });
 });
 
 module.exports = router;

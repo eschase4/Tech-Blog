@@ -6,7 +6,8 @@ const htmlRoutes = require('./html-routes');
 router.use('/', htmlRoutes);
 router.use('/api', apiRoutes);
 
-router.get('/*', (req, res) => { // change back to /*
+router.get('/', (req, res) => {
+  // change back to /*
   res.redirect('/home');
 });
 
