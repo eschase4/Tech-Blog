@@ -34,6 +34,8 @@ While making this app, I learned alot about backend web development and how it t
 
 First, create an account by clicking the login button on the nav bar. Then, once you are logged in, you can click the "make new blogpost button". That will redirect you to page with two input sections. The first is for the title of your review, the second is for the review itself. Once you've finsished your review, click 'submit'. Go back to the homepage and you should see your review.
 
+Link to Deployed Application: https://fathomless-thicket-47575.herokuapp.com/home
+
 <a name="contribution"></a>
 ## How To Contribute
 
