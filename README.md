@@ -52,12 +52,7 @@ This app uses node.js, express.js, handlebars, bcrypt, nodemon, mySQL, and Seque
 <a name="credits"></a>
 ## Credits 
 
-
-
-<a name="license"></a>
-## License
-
-This application was made under the !!!ERASE THIS SECTION!!! license.
+I take sole responsibility.
 
 ## Questions
 
