@@ -44,7 +44,7 @@ No contributions are necessary.
 <a name="technologies"></a>
 ## Technologies
 
-This app uses node.js, express.js, handlebars, bcrypt, nodemon, mySQL, and Sequelize.
+This app uses handlebars, node.js, express.js, handlebars, bcrypt, nodemon, mySQL, and Sequelize.
 
 <a name="tests"></a>
 ## Tests
