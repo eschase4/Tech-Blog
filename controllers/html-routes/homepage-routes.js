@@ -5,19 +5,20 @@ router.get('/home', async (req, res) => {
   const postData = await Post.findAll({
     include: User,
   });
-  // res.status(200).json(postData);
+
   const loadPosts = postData.map((post) => ({
     id: post.id,
     title: post.title,
     text: post.text,
-    user: post.user.username,
+    user: post.username,
   }));
+  console.log(loadPosts);
+  loadPosts.reverse();
   res.render('homepage', {
     loggedIn: req.session.loggedIn,
     loadPosts,
   });
 });
-// username: loadPosts.user,
 
 router.get('/newpost', (req, res) => {
   res.render('newpost', {

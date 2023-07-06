@@ -10,6 +10,7 @@ router.post('/users', async (req, res) => {
       password: req.body.password,
     });
 
+    console.log(dbUserData);
     req.session.save(() => {
       req.session.loggedIn = true;
       req.session.user_id = dbUserData.id;
@@ -23,7 +24,6 @@ router.post('/users', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 // Login
 router.post('/users/login', async (req, res) => {
   try {

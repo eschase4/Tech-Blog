@@ -1,18 +1,25 @@
 const submitBtn = document.querySelector('#submitBtn');
 
-const handleSubmit = (e) => {
-  e.preventDefault();
+const handleSubmit = async (e) => {
   const postObj = {
-    text: document.querySelector('#textArea').value.trim(),
-    title: document.querySelector('#title').value.trim(),
+    title: document.querySelector('#title').value,
+    text: document.querySelector('#textArea').value,
   };
-  fetch('/api/newpost', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(postObj),
-  });
+
+  try {
+    const respnse = await fetch('/api/newpost', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(postObj),
+    });
+    if (respnse.ok) {
+      window.location.href = '/home';
+    } else {
+      console.error('Failed to create post');
+    }
+  } catch (err) {
+    console.error(err);
+  }
 };
 
 submitBtn.addEventListener('click', handleSubmit);
