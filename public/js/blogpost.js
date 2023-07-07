@@ -1,6 +1,7 @@
 const submitBtn = document.querySelector('#submitBtn');
 
 const handleSubmit = async (e) => {
+  e.preventDefault();
   const postObj = {
     title: document.querySelector('#title').value,
     text: document.querySelector('#textArea').value,

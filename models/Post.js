@@ -21,7 +21,8 @@ Post.init(
     },
     username: {
       type: DataTypes.STRING,
-      allowNull: false,
+      // allowNull: false,
+      defaultValue: 'Anonymous',
     },
     user_id: {
       type: DataTypes.INTEGER,
