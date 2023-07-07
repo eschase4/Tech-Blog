@@ -7,7 +7,7 @@ router.get('/home', async (req, res) => {
   });
   // console.log(postData);
   // const userData = await User.findByPk(req.session.user_id);
-  console.log(postData[0].dataValues);
+  // console.log(postData[0].dataValues);
   const loadPosts = postData.map((post) => ({
     id: post.id,
     title: post.title,
