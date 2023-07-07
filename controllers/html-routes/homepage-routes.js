@@ -12,7 +12,6 @@ router.get('/home', async (req, res) => {
     text: post.text,
     user: post.username,
   }));
-  console.log(loadPosts);
   loadPosts.reverse();
   res.render('homepage', {
     loggedIn: req.session.loggedIn,
